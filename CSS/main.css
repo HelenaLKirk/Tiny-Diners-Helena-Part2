@@ -1,0 +1,19 @@
+
+.jumbotron {
+	padding-top: 90px;
+	padding-left: 30px;
+	padding-right: 30px;
+	min-height: 400px;
+	margin-bottom: 0px;
+	background-image: url("Images/Children-At-Table.jpg"); 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#about p {
+	text-align: left;
+}
+
+#contact p{
+	text-align: left; 
+}
