@@ -1,15 +1,34 @@
-
-.jumbotron {
-	padding-top: 90px;
-	padding-left: 30px;
-	padding-right: 30px;
-	min-height: 400px;
-	margin-bottom: 0px;
-	background-image: url("Images/Children-At-Table.jpg"); 
-	background-size: cover;
-	background-attachment: fixed;
+body {
+	padding-top: 70px;
 }
 
+.navbar-inverse {
+	background-color: #dc424c;
+}
+
+.navbar-nav {
+	color: white;
+}
+
+.carousel-inner img {
+	max-height: 422px;
+	display: block;
+	margin: auto;
+	object-fit: contain;
+}
+
+.btn {
+	display: table;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+	
+
+}
 #about p {
 	text-align: left;
 }
