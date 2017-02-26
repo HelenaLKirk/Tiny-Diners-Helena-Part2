@@ -1,0 +1,31 @@
+h1{
+	font-family: 'Sanchez', serif;
+    margin-bottom: 20px;
+}
+
+label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+    color: #333;
+}
+
+.lead p {
+	font-family:'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+.lead {
+    font-size: 16px;
+	}
+}
+
+type.less:66
+
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
