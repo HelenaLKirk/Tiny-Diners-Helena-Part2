@@ -20,29 +20,13 @@ $(document).ready(function(){
   });
 });
 
-$('.thumbnails').find('.thumbnail').uniformHeight();
-
-$(window).resize(function () {
-    $('.thumbnails').find('.thumbnail').uniformHeight();
-});
-
-(function ($) {
-    $.fn.uniformHeight = function () {
-        var maxHeight = 0,
-            wrapper,
-            wrapperHeight;
-
-        return this.each(function () {
-
-            // Applying a wrapper to the contents of the current element to get reliable height
-            wrapper = $(this).wrapInner('<div class="wrapper" />').children('.wrapper');
-            wrapperHeight = wrapper.outerHeight();
-
-            maxHeight = Math.max(maxHeight, wrapperHeight);
-
-            // Remove the wrapper
-            wrapper.children().unwrap();
-
-        }).height(maxHeight);
+var maxHeight = 0;
+$(".thumbnail").each(function(index, element) {
+    var elementHeight = $(element).height();
+    if (elementHeight >maxHeight) {
+        maxHeight = elementHeight;
     }
-})(jQuery);
+});
+$(".thumbnail").css(".height",maxHeight);
+$(".thumbnail").each(function(index, element) {
+$(element).height(maxHeight);});
